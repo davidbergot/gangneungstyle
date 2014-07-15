@@ -16,5 +16,8 @@ To add new posts, simply add a file in the `_posts` directory that follows the c
 
 강릉 스타일
 
-Jekyll also offers powerful support for code snippets:
+Exemple d'image:
+<img class="img-responsive" src="{{ site.url_test }}/assets/Jeonju-South_Korea.jpg"/>
+<small>Photo by [Emmanuel DYAN](https://www.flickr.com/photos/emmanueldyan/5748386859/in/photolist-9KXZ9g-as5bF-5r7ccH-5sLaGc-5syggM-9h98EB-4oSC78-apWjK-9KXWED-5sxMKp-KEJQQ-5NkWJV-5rymE7-5sxMKV-4uZfdQ-bcFocV-9KXYAD-9KV5YB-9KVNGX-9KZ9gd-9KZcih-9KYcWs-dNQUYB-9KY8Gf-9KYxN9-5ryjWm-GULQq-3uwBE7-7dim3T-8tRWBH-84c2j8-mQGnKa-fAnGzG-5scVEJ-5RR8ts-6z5wZd-5sLyWA-5sLL4L-5qEW6v-9nEbbL-5sQygb-5ru3E4-9KWb1i-9KZaUL-9KW93V-dEk5tB-dqpF9g-9KVDc8-89fEh3-9L1Md1)</small>
+
 

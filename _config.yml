@@ -1,5 +1,6 @@
 name: Gangneung Style
 url: https://davidbergot.github.io
+url_test: http://192.168.1.64:4000
 markdown: redcarpet
 pygments: true
 timezone: Asia/Seoul

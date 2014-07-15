@@ -12,6 +12,7 @@ en:
     en: english
     es: spanish
     fr: french
+    ko: korean
   by: by
   month:
     January: January
@@ -48,6 +49,7 @@ fr:
     en: anglais
     es: espagnol
     fr: français
+    ko: corréen
   month:
     January: Janvier
     February: Février
@@ -61,3 +63,18 @@ fr:
     October: Octobre
     November: Novembre
     December: Décembre
+ko:
+  name: 강릉 스타일
+  home: 홈 페이지
+  about: 약
+  archives: 기록 보관소
+  landing-page:
+    baseurl: 'ko'
+  read_in: 이 게시물을 읽을
+  by: 로
+  language:
+    en: 영어
+    es: 스페인의
+    fr: 프랑스의
+  month:
+    July: 7월

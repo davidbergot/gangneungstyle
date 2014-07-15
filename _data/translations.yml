@@ -1,6 +1,7 @@
 en:
   name: Gangneung Style
   description: Discovery of Korea
+  home: Home
   about: About
   archives: Archives
   about_content: This is where we can describe a bit more the objective of this blog
@@ -26,6 +27,8 @@ en:
     November: November
     December: December
 es:
+  name: Gangneung Style
+  home: Pantalla de inicio
   language:
     en: inglès
     es: espanol
@@ -33,6 +36,7 @@ es:
 fr:
   name: Gangneung Style
   description: Ce blog a été créé lorsque nous avons déménagé en Corée, pour une période de 3 ans
+  home: Page d'accueil
   about: À propos
   archives: Archives
   about_content: Ici on décrira plus précisément le but de ce blog

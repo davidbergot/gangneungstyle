@@ -40,11 +40,11 @@
       <div class="container">
         <nav class="blog-nav">
           {% if page.lang %}
-          <a class="blog-nav-item active" href="/{{t.[lang].landing-page.baseurl}}/">{{ site.name }}</a>
+          <a class="blog-nav-item active" href="/">{{ site.name }}</a>
+          <a class="blog-nav-item " href="/{{t.[lang].landing-page.baseurl}}/">{{ t.[lang].home }}</a>
           {% else %}
           <a class="blog-nav-item active" href="/">{{ site.name }}</a>
           {% endif %}
-          <a class="blog-nav-item" href="/feed.xml"><i class="fa fa-rss-square"></i></a>
         </nav>
       </div>
     </div>
@@ -93,6 +93,11 @@
 
     </div> <!-- /.container -->
 
+    <div class="blog-footer">
+      <p>
+        <a href="/feed.xml"><i class="fa fa-rss-square"></i></a>
+      </p>
+    </div>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->

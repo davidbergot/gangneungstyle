@@ -9,12 +9,18 @@ lang: es
       {% if post.lang contains page.lang %}
       <div class="blog-post">
         <h2 class="blog-post-title">{{ post.date | date_to_string }}. <a href="{{ post.url }}">{{ post.title }}</a></h2>
+        {% if post.preview %}
+          <p>{{ post.preview }}</p>
+        {% endif %}
       </div>
       {% endif %}
 
     {% else %}
       <div class="blog-post">
         <h2 class="blog-post-title">{{ post.date | date_to_string }}. <a href="{{ post.url }}"><span class="flag-icon flag-icon-{{ post.lang }}"></span> {{ post.title }}</a></h2>
+        {% if post.preview %}
+          <p>{{ post.preview }}</p>
+        {% endif %}
       </div>
     {% endif %}
 

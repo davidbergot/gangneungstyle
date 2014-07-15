@@ -6,6 +6,7 @@ author: David
 lang: en
 categories:
    - en 
+preview: This is a short summary of the post that will be shonw on index pages
 ---
 
 You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!

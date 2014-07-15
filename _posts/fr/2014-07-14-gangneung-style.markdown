@@ -5,7 +5,8 @@ date:   2014-07-14 10:40:21
 author: David
 lang: fr
 categories:
-   - fr 
+   - fr
+preview: Ceci est un résumé du post, affiché sur les pages d'index 
 ---
 
 Ceci est la traduction en français

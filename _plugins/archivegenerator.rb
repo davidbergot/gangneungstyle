@@ -24,7 +24,7 @@ module Jekyll
       self.content = <<-EOS
 <ul>
 {% for post in page.posts %}
-<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+<li><a href="{{ post.url }}"><span class="flag-icon flag-icon-{{ post.lang }}"></span> {{ post.title }}</a></li>
 {% endfor %}
 </ul>
 EOS

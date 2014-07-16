@@ -15,7 +15,7 @@ layout: default
     {%for post in site.posts %}
       {% capture post_url %}{{ post.url | remove: post.lang}}{% endcapture %}
       {% if post_url == page_url and post.lang != page.lang %}
-        {{ t.[post.lang].read_in }} <a href="{{ post.url }}"><span class="flag-icon flag-icon-{{ post.lang }}"></span> {{ t.[post.lang].language.[post.lang] }}</a>
+        {{ t.[post.lang].read_in }} <a href="{{ post.url }}"><span class="flag-icon flag-icon-{{ post.lang }}"></span> {{ t.[post.lang].language.[post.lang] }}</a><br/>
       {% endif %}
     {% endfor %}
   </p>

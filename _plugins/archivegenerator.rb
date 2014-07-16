@@ -22,11 +22,35 @@ module Jekyll
       self.ext = '.html'
       self.basename = 'index'
       self.content = <<-EOS
-<ul>
-{% for post in page.posts %}
-<li><a href="{{ post.url }}"><span class="flag-icon flag-icon-{{ post.lang }}"></span> {{ post.title }}</a></li>
+<div class="row">
+{% for post in site.posts %}
+  {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+  {% capture month %}{{ post.date | date: '%B' }}{% endcapture %}
+  {% unless forloop.first %}
+    {% if year != pyear %}
+      </div>
+      <div class="col-md-2"><h1>{{ year }}</h1></div>
+      <div class="col-md-9 col-md-offset-3"><h4>{{ month }}</h4>
+    {% endif%}
+    {% if year == pyear and month != pmonth %}
+        </div>
+      </div>
+      <div class="col-md-9 col-md-offset-3"><h4>{{ month }}</h4>
+        <div class="col-sm-11 col-md-offset-1">
+    {% endif %}
+          <p><a href="{{ post.url }}"><span class="flag-icon flag-icon-{{ post.lang }}"></span> {{ post.title }}</a></p>
+  {% else %}
+      <div class="col-md-2"><h1>{{ year }}</h1></div>
+      <div class="col-md-9 col-md-offset-3"><h4>{{ month }}</h4>
+        <div class="col-sm-11 col-md-offset-1">
+          <p><a href="{{ post.url }}"><span class="flag-icon flag-icon-{{ post.lang }}"></span> {{ post.title }}</a></p>
+  {% endunless %}
+  {% capture pyear %}{{ post.date | date: '%Y' }}{% endcapture %}
+  {% capture pmonth %}{{ post.date | date: '%B' }}{% endcapture %}
 {% endfor %}
-</ul>
+    </div>
+  </div>
+</div>
 EOS
       self.data = {
         'layout' => 'default',

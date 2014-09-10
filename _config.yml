@@ -1,8 +1,8 @@
 name: Gangneung Style
 url: https://gangneungstyle.github.io
-url_test: http://192.168.1.64:4000
+url_test: http://localhost:4000
 markdown: redcarpet
-pygments: true
+highlighter: true
 timezone: Asia/Seoul
 defaultlang: en
 exclude: [Rakefile]

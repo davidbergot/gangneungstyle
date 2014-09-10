@@ -4,7 +4,9 @@ en:
   home: Home
   about: About
   archives: Archives
-  about_content: This is where we can describe a bit more the objective of this blog
+  about_content: This blog will describe my life in Korea, or at least some hopefully interesting facts gathered around while living there.
+  author:
+    David: My name is David and I moved to Korea for work. I should stay there for a bit more than 3 years.
   landing-page:
     baseurl: 'en'
   read_in: Read this post in
@@ -42,7 +44,9 @@ fr:
   home: Page d'accueil
   about: À propos
   archives: Archives
-  about_content: Ici on décrira plus précisément le but de ce blog. Ici on décrira plus précisément le but de ce blog. Ici on décrira plus précisément le but de ce blog. Ici on décrira plus précisément le but de ce blog. Ici on décrira plus précisément le but de ce blog
+  about_content: Ce blog devrait décrire ma vie en Corée du Sud, ou au moins contenir quelques informations qui j'espère seront intéressantes.
+  author:
+    David: Je m'appelle David et j'ai déménagé en Corée du Sud pour le travail. Je devrais y rester un peu plus de 3 ans.
   landing-page:
     baseurl: 'fr'
   read_in: Lire ce post en

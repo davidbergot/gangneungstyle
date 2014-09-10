@@ -126,7 +126,7 @@ $(window).scroll(function(){
             <ol class="list-unstyled">
                {%for post in site.posts %}
                  {% capture month %}{{ post.date | date: '%B' }}{% endcapture %}
-                 {% unless forloop.last %}
+                 {% unless forloop.first %}
                    {% capture year_month %}{{ post.date | date: '%Y%m' }}{% endcapture %}
                    {% capture nyear_month %}{{ post.next.date | date: '%Y%m' }}{% endcapture %}
                    {% if year_month != nyear_month %}

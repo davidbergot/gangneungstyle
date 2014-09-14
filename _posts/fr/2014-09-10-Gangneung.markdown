@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Gangneung"
-date:   2014-09-13 09:37:00
+date:   2014-09-10 09:37:00
 author: David
 lang: fr
 categories:

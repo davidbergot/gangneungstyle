@@ -30,6 +30,8 @@ en:
     October: October
     November: November
     December: December
+  previous: Previous post
+  next: Next post
 es:
   name: Gangneung Style
   home: Pantalla de inicio
@@ -70,6 +72,8 @@ fr:
     October: Octobre
     November: Novembre
     December: Décembre
+  previous: Post précédent
+  next: Post suivant
 ko:
   name: 강릉 스타일
   home: 홈 페이지

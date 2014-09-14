@@ -1,5 +1,6 @@
 ---
 layout: none
+lang: es
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 {% assign t = site.data.translations %}
@@ -15,6 +16,7 @@ layout: none
     <link>{{ site.url }}</link>
     <atom:link href="{{ site.url }}/feed.xml" rel="self" type="application/rss+xml" />
     {% for post in site.posts limit:20 %}
+      {% if post.lang == lang %}
       <item>
         <title xml:lang="{{ lang }}">{{ post.title | xml_escape }}</title>
         <description xml:lang="{{ lang }}">{{ post.content | xml_escape }}</description>
@@ -22,6 +24,7 @@ layout: none
         <link>{{ site.url }}{{ post.url }}</link>
         <guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
       </item>
+      {% endif %}
     {% endfor %}
   </channel>
 </rss>

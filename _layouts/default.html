@@ -145,7 +145,11 @@ $(window).scroll(function(){
 
     <div class="blog-footer">
       <p>
-        <a href="/feed.xml"><i class="fa fa-rss-square"></i></a>
+        {% if page.lang %}
+          <a href="/{{ page.lang }}/feed.xml"><i class="fa fa-rss-square"></i></a>
+          {% else %}
+          <a href="/feed.xml"><i class="fa fa-rss-square"></i></a>
+        {% endif %}
       </p>
     </div>
     <!-- Bootstrap core JavaScript
